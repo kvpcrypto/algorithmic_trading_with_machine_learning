@@ -9,7 +9,9 @@ The purpose of this analysis is to use different machine learning models in orde
 
 * Baseline Performance:
 
+![cr_baseline](https://user-images.githubusercontent.com/61864923/199658229-f476c192-2f91-4688-bff8-e2e73cd512ab.png)
 
+![svmplot](https://user-images.githubusercontent.com/61864923/199658236-c24455ec-4e68-4c29-96b0-585cfa682d9a.png)
 
   * Overall accuracy of 64%.
   * In predicting the '-1' or signal to sell stock short, the model was 100% accurate with a precision of 1, but has a low recall value which shows that the model is not likely to correctly sell stock short.
@@ -17,10 +19,13 @@ The purpose of this analysis is to use different machine learning models in orde
 
 Based on the graph, the model shows to have performed better than the actual returns as the strategy returns is recorded to be above actualy returns and still positive.
 
-
+___
 
 * Tuned Dataset Size Performance:
 
+![cr_size](https://user-images.githubusercontent.com/61864923/199658301-84ec587f-5fd6-497c-9d91-f4e2ad8feab3.png)
+
+![size_svmplot](https://user-images.githubusercontent.com/61864923/199658308-f536297d-c580-4ccf-b325-2406ab85ecbf.png)
 
   * Overall accuracy of 57%.
   * Original size of dataset is 3 months. The tuned size of the dataset was adjusted to 8 months
@@ -31,6 +36,9 @@ Looking at the graph, the strategy returns was similar as actual returns for the
 
 * Tuned Window Performance:
 
+![cr_sma](https://user-images.githubusercontent.com/61864923/199658328-1e29deb1-f618-46a7-a339-5f02ec0e1351.png)
+
+![sma_svmplot](https://user-images.githubusercontent.com/61864923/199658333-2a09ff49-c776-4fa6-9c76-b7f6f7baf33c.png)
 
   * Overall accuracy of 58%.
   * Original windows for short and long are 4 and 100 days respectively. The tuned window for short and long were changed to 10 and 50 respectively.
@@ -41,8 +49,10 @@ Based on the graph, the tuned window performance had the same returns up until t
 
 * Logistic Regression Performance
     
+![cr_lrm](https://user-images.githubusercontent.com/61864923/199658348-81c88192-516b-4bb5-8d09-67f61a960928.png)
     
-    
+![lrmplot](https://user-images.githubusercontent.com/61864923/199658365-a0002872-9100-456d-b65d-c9009ffcde8c.png)
+  
   * Overall accuracy of 66%.  
   * Best precision for '-1' at 88% but low recall.
   * Similar precision, recall, and f1-score for '1' when comparing to baseline performance.
