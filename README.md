@@ -34,6 +34,8 @@ ___
  
 Looking at the graph, the strategy returns was similar as actual returns for the first 3 months, but afterwards, the model does perform better but still remains a negative value.
 
+___
+
 * Tuned Window Performance:
 
 ![cr_sma](https://user-images.githubusercontent.com/61864923/199658328-1e29deb1-f618-46a7-a339-5f02ec0e1351.png)
@@ -47,6 +49,8 @@ Looking at the graph, the strategy returns was similar as actual returns for the
  
 Based on the graph, the tuned window performance had the same returns up until the last 15 days in the dataset where the model eventually performed better but still contained a negative returns.
 
+___
+
 * Logistic Regression Performance
     
 ![cr_lrm](https://user-images.githubusercontent.com/61864923/199658348-81c88192-516b-4bb5-8d09-67f61a960928.png)
@@ -58,6 +62,8 @@ Based on the graph, the tuned window performance had the same returns up until t
   * Similar precision, recall, and f1-score for '1' when comparing to baseline performance.
 
 Based on the graph this model performed best. After a month the model deviated from the actual returns and maintained a higher, postive, returns.
+
+___
 
 ## Summary
 
